@@ -11,7 +11,7 @@ RUN apk add --no-cache wget libc6-compat libstdc++ \
 COPY jgrc2023 /src/jgrc2023
 COPY jgrc2020 /src/jgrc2020
 
-RUN cd /src/jgrc2023 && hugo --minify --baseURL "https://rxjgrc.roppongi.express/" -d /build \
-    && cd /src/jgrc2020 && hugo --minify --baseURL "https://rxjgrc.roppongi.express/2020/" -d /build/2020
+RUN cd /src/jgrc2023 && hugo --minify --baseURL "https://roppongiexpress.github.io/rxjgrc.roppongi.express/" -d /build \
+    && cd /src/jgrc2020 && hugo --minify --baseURL "https://roppongiexpress.github.io/rxjgrc.roppongi.express/2020/" -d /build/2020
 
 CMD ["cp", "-r", "/build/.", "/output/"]
