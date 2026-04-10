@@ -18,6 +18,7 @@ build: init
 	mkdir -p docs
 	docker run --rm -v "$$(pwd)/docs:/output" rxjgrc-builder
 	touch docs/.nojekyll
+	echo "rxjgrc.roppongi.express" > docs/CNAME
 
 clean:
 	rm -rf jgrc2020 jgrc2023
