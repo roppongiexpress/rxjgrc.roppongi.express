@@ -8,6 +8,7 @@ build: init
 	rm -rf docs
 	mkdir -p docs
 	docker run --rm -v "$$(pwd)/docs:/output" rxjgrc-builder
+	touch docs/.nojekyll
 
 clean:
 	git submodule deinit --all -f 2>/dev/null || true
