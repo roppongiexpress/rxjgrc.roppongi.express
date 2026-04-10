@@ -1,6 +1,0 @@
-[submodule "jgrc2023"]
-	path = jgrc2023
-	url = https://github.com/roppongiexpress/rxjgrc2023.git
-[submodule "jgrc2020"]
-	path = jgrc2020
-	url = https://github.com/roppongiexpress/rxjgrc2020.git

@@ -12,17 +12,18 @@
 ## 前提条件
 
 - Docker
+- GitHub リポジトリへのアクセス権（rxjgrc2023, rxjgrc2020）
 
 ## 使い方
 
 ```bash
-# 初回セットアップ（サブモジュール取得）
+# 初回セットアップ（ソースリポジトリの clone / pull）
 make init
 
 # ビルド（init含む）
 make build
 
-# クリーンアップ（docs/削除 + Dockerイメージ削除）
+# クリーンアップ（ソースリポジトリ削除 + Dockerイメージ削除）
 make clean
 ```
 
@@ -32,7 +33,7 @@ make clean
 
 https://rxjgrc.roppongi.express
 
-## サブモジュール
+## ソースリポジトリ
 
 - https://github.com/roppongiexpress/rxjgrc2023
 - https://github.com/roppongiexpress/rxjgrc2020
